@@ -23,6 +23,10 @@
   color: #61dafb;
 }
 
+.gallery {
+  margin-top: 2rem;
+}
+
 .image-gallery-image {
   height: 40vh;
 }
@@ -37,7 +41,7 @@
 
 @media only screen and (min-width: 600px) {
   .image-gallery-image {
-    height: 60vh;
+    height: 50vh;
   }
 
   .image-gallery-image {

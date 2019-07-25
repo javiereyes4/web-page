@@ -26,7 +26,7 @@ export default class Gallery extends React.Component {
     ]
 
     return (
-      <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showBullets={true} showPlayButton={false} autoPlay={false}/>
+      <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showBullets={true} showPlayButton={false} autoPlay={true}/>
     );
   }
 }
