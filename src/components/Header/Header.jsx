@@ -32,19 +32,23 @@ export default class Header extends React.Component {
                   <NavLink className="linkNav" href="/components/">Nosotros</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="https://github.com/reactstrap/reactstrap">Productos</NavLink>
+                  <NavLink className="linkNav" href="/components/">Productos</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="https://github.com/reactstrap/reactstrap">Bio</NavLink>
+                  <NavLink className="linkNav" href="/components/">Bio</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="https://github.com/reactstrap/reactstrap">Contactenos</NavLink>
+                  <NavLink className="linkNav" href="/components/">Contactenos</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
         </div>
         <img className="logo" src={logo} />
+        <div className="textHeader">
+          <strong>ALEJANDRO ALONSO G</strong> 
+          <strong>BOLSAS PUBLICITARIAS</strong>
+        </div>
         <div className="headerDesk">
           <div className="navDesk">
             <ul className="liStyle">

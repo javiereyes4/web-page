@@ -23,9 +23,10 @@
   color: #61dafb;
 }
 
-.image-gallery-image {
-  height: 40vh;
+.gallery {
+  margin-top: 1rem;
 }
+
 
 .image-gallery-slide img {
   width: 100%
@@ -36,9 +37,6 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .image-gallery-image {
-    height: 60vh;
-  }
 
   .image-gallery-image {
     text-align: center;
@@ -66,4 +64,11 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+
+.containerAll {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
