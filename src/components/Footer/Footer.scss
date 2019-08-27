@@ -1,6 +1,9 @@
 .footerContainer {
   width: 100%;
   height: auto;
+  background: url(../../img/svg/bolsaspie.svg) no-repeat;
+  background-size: 300px;
+  background-position: right;
   background-color: #F6F6F6;
   margin-top: 3rem;
   font-size: 12px;
@@ -11,13 +14,15 @@
     display: none;
   }
   .footerContainer {
+    background-size: 200px;
     margin-top: 6rem;
   }
   .fooDesk {
     display: block;
     text-align: center;
-    color: #838383;
+    color: black;
     padding: 1rem;
+    padding-bottom: .6rem;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -45,9 +50,9 @@
   .fooMob {
     display: block;
     text-align: center;
-    color: #838383;
+    color: black;
     padding-top: .6rem;
-    padding-bottom: .6rem;
+    padding-bottom: .5rem;
   }
   .textGoup1 {
     display: flex;

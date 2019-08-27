@@ -24,12 +24,9 @@
 }
 
 .gallery {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
-.image-gallery-image {
-  height: 40vh;
-}
 
 .image-gallery-slide img {
   width: 100%
@@ -40,9 +37,6 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .image-gallery-image {
-    height: 50vh;
-  }
 
   .image-gallery-image {
     text-align: center;
@@ -70,4 +64,11 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+
+.containerAll {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }

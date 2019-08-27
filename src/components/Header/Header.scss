@@ -3,6 +3,8 @@
   height: 6rem;
   background-color: #FAFAFA;
   box-shadow: 0 0 1em 0 #D7D7D7;
+  background: url(../../img/svg/header.svg) no-repeat;
+  background-position: right;
   padding: 1rem;
   display: flex;
 }
@@ -72,8 +74,8 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
-  font-size: 12px;
+  padding:  1rem;
+  font-size: 9px;
   width: 100%;
   color: #838383;
 }
