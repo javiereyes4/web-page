@@ -19,6 +19,12 @@ function App() {
       <div>
         <Footer />
       </div>
+      <div>
+        <CardBio />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
