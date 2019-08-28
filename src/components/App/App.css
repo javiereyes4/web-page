@@ -1,3 +1,10 @@
+.containerAll {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
 }
@@ -24,7 +31,7 @@
 }
 
 .gallery {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 
@@ -64,11 +71,4 @@ a {
   to {
     transform: rotate(360deg);
   }
-}
-
-.containerAll {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
 }

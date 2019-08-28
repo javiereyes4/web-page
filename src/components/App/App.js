@@ -1,26 +1,25 @@
-import React from 'react';
-import Header from '../Header/Header';
-import Gallery from '../Gallery/Gallery'
-import CardBio from '../CardBio/CardBio'
-import Footer from '../Footer/Footer'
-import datajson from '../../components/data/app.json'
+import React, { Component } from 'react';
+import PropTypes  from 'prop-types';
 import './App.css';
 
-function App() {
-  return (
-    <div className="containerAll">
-      <Header />
-      <div className="gallery">
-        <Gallery data={datajson} />
+class App extends Component {
+
+  static propTypes = {
+    children: PropTypes.object.isRequired
+  }
+
+  render() {
+
+    const { children } = this.props;
+
+    return (
+      <div className="App">
+        <div className="containerAll">
+          {children}
+        </div>
       </div>
-      <div>
-        <CardBio />
-      </div>
-      <div>
-        <Footer />
-      </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default App;
