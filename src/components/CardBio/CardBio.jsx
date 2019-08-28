@@ -1,6 +1,6 @@
 import React from 'react';
 import './CardBio.scss'
-import bio from '../../img/svg/bio.svg'
+import bio from '../../img/svg/biobanner.svg'
 import video from '../../video/bioMaq.mp4'
 
 export default class Header extends React.Component {

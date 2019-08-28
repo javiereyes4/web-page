@@ -1,17 +1,19 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import './Header.scss'
 import logo from '../../img/png/logo.png'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
 
-export default class Header extends React.Component {
+class Header extends React.Component {
 
   constructor(props) {
     super(props);
-
+    
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
       collapsed: true
     };
+    this.routeChange = this.routeChange.bind(this);
   }
 
   toggleNavbar() {
@@ -20,31 +22,43 @@ export default class Header extends React.Component {
     });
   }
 
+  routeChange() {
+    let path = `Home`;
+    this.props.history.push(path);
+  }
+
   render() {
+    const { image, colorText } = this.props;
+    const styles = { backgroundImage: 'url('+ image +')' }
+    const stylesA = { color: colorText }
+    
+    
     return(
-      <div className="header">
+      <div className="header" style={styles}>
         <div className="headerMobile">
           <Navbar className="navPosition" color="faded" light>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse isOpen={!this.state.collapsed} navbar>
               <Nav navbar>
                 <NavItem className="li-Nav">
-                  <NavLink className="linkNav" href="/components/">Nosotros</NavLink>
+                  <NavLink className="linkNav">
+                    <NavLink className="linkNav" href="/We">Nosotros</NavLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="/components/">Productos</NavLink>
+                  <NavLink className="linkNav" href="/Product">Productos</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="/components/">Bio</NavLink>
+                  <NavLink className="linkNav" href="/Bio">Bio</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="/components/">Contactenos</NavLink>
+                  <NavLink className="linkNav" href="/Contact">Contactenos</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
         </div>
-        <img className="logo" src={logo} />
+        <img className="logo" src={logo} onClick={this.routeChange} />
         <div className="textHeader">
           <strong>ALEJANDRO ALONSO G</strong> 
           <strong>BOLSAS PUBLICITARIAS</strong>
@@ -53,16 +67,16 @@ export default class Header extends React.Component {
           <div className="navDesk">
             <ul className="liStyle">
               <li className="liMob">
-                <a href="/components/">Nosotros</a>
+                <a style={stylesA} href="/we">Nosotros</a>
               </li>
               <li className="liMob">
-                <a href="/components/">Productos</a>
+                <a style={stylesA} href="/Product">Productos</a>
               </li>
               <li className="liMob">
-                <a href="/components/">Bio</a>
+                <a style={stylesA} href="/Bio">Bio</a>
               </li>
               <li className="liMob">
-                <a href="/components/">Contactenos</a>
+                <a style={stylesA} href="/Contact">Contactenos</a>
               </li>
             </ul>
           </div>
@@ -71,3 +85,5 @@ export default class Header extends React.Component {
     )
   }
 }
+
+export default withRouter(Header);
