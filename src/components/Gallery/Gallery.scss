@@ -3,3 +3,45 @@
   bottom: 37px !important;
   text-align: left;
 }
+
+.gallery {
+  margin-top: 3rem;
+}
+
+.image-gallery-slide img {
+  width: 100%
+}
+
+.image-gallery-bullets-container button {
+  background: black !important;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .image-gallery-image {
+    text-align: center;
+  }
+  
+  .image-gallery-slide img {
+    width: 50% !important;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .image-gallery-bullets-container button {
+    background: white !important;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

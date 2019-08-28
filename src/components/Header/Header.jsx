@@ -1,8 +1,8 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
-import './Header.scss'
+import { Link } from 'react-router-dom';
 import logo from '../../img/png/logo.png'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
+import './Header.scss'
 
 class Header extends React.Component {
 
@@ -42,23 +42,31 @@ class Header extends React.Component {
               <Nav navbar>
                 <NavItem className="li-Nav">
                   <NavLink className="linkNav">
-                    <NavLink className="linkNav" href="/We">Nosotros</NavLink>
+                    <Link to="/We">Nosotros</Link>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="/Product">Productos</NavLink>
+                  <NavLink className="linkNav" href="/Product">
+                    <Link to="/Product">Productos</Link>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="/Bio">Bio</NavLink>
+                  <NavLink className="linkNav" href="/Bio">
+                    <Link to="/Bio">Bio</Link>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="linkNav" href="/Contact">Contactenos</NavLink>
+                  <NavLink className="linkNav" href="/Contact">
+                    <Link to="/Contact">Contactenos</Link>
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
         </div>
-        <img className="logo" src={logo} onClick={this.routeChange} />
+        <Link className="linkLogo" to="/Home">
+          <img className="logo" src={logo} />
+        </Link>
         <div className="textHeader">
           <strong>ALEJANDRO ALONSO G</strong> 
           <strong>BOLSAS PUBLICITARIAS</strong>
@@ -67,16 +75,16 @@ class Header extends React.Component {
           <div className="navDesk">
             <ul className="liStyle">
               <li className="liMob">
-                <a style={stylesA} href="/we">Nosotros</a>
+                <Link style={stylesA} to="/We">Nosotros</Link>
               </li>
               <li className="liMob">
-                <a style={stylesA} href="/Product">Productos</a>
+                <Link style={stylesA} to="/Product">Productos</Link>
               </li>
               <li className="liMob">
-                <a style={stylesA} href="/Bio">Bio</a>
+                <Link style={stylesA} to="/Bio">Bio</Link>
               </li>
               <li className="liMob">
-                <a style={stylesA} href="/Contact">Contactenos</a>
+                <Link style={stylesA} to="/Contact">Contactenos</Link>
               </li>
             </ul>
           </div>
@@ -86,4 +94,4 @@ class Header extends React.Component {
   }
 }
 
-export default withRouter(Header);
+export default Header;
