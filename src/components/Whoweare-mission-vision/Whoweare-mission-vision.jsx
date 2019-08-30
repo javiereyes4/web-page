@@ -17,6 +17,7 @@ export default class Whowearemissionvision extends React.Component {
                 Somos una empresa productora de bolsas biodegradables en plástico y kambrel. Fundada desde 1982, en esta trayectoria nos hemos caracterizado por mantener unos parámetros de calidad, honradez y cumplimiento.
                 <br />
                 <br />
+                Desarrollamos diferentes estilos de bolsa que se ajustan a las necesidades de su almacén, boutique y/o empresa. Ganando para usted y su producto una buena imagen basados en la estética y la publicidad que desea comunicar.
               </p>
             </div>
           </Col>

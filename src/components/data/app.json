@@ -1,20 +1,20 @@
 { 
   "images": [
     {
-      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image1.png",
-      "originalLocal": "/assets/img/image1.png",
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image1.svg",
+      "originalLocal": "/assets/img/image1.svg",
       "description" : "Nos adaptamos a sus necesidades para ofrecer \nel diseño que mejor se adapte a su producto o a sus líneas de productos."
     },
     {
-      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image2.jpg",
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image2.svg",
       "description": "Manejamos la técnica de serigrafía para ofrecer adaptabilidad a las cantidades que pueda solicitar."
     },
     {
-      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image3.jpg",
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image3.svg",
       "description": "Comprometidos con el planeta manejamos plasticos oxo-biodegrables y telas no tejidas (kambrel)."
     },
     {
-      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image4.jpg",
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image4.svg",
       "description": "Atendiendo otro tipo de necesidades ofrecemos la terminación de sus bolsas como impresión, selle, corte, manija o troquel."
     }
   ] 
