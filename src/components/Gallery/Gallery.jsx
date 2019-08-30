@@ -9,7 +9,7 @@ export default class Gallery extends React.Component {
     const { data } = this.props;
 
     return (
-      <ImageGallery items={data.images} showThumbnails={false} showFullscreenButton={false} showBullets={true} showPlayButton={false} autoPlay={false}/>
+      <ImageGallery items={data.images} showThumbnails={false} showFullscreenButton={false} showBullets={true} showPlayButton={false} autoPlay={true}/>
     );
   }
 }
