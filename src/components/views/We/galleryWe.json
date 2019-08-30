@@ -1,16 +1,16 @@
 { 
   "images": [
     {
-      "original": "/assets/img/impresora.jpg"
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/impresora.jpg"
     },
     {
-      "original": "/assets/img/manija.jpg"
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/manija.jpg"
     },
     {
-      "original": "/assets/img/maquina.jpg"
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/maquina.jpg"
     },
     {
-      "original": "/assets/img/maquina2.jpg"
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/maquina2.jpg"
     }
   ] 
 }
