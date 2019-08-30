@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/web-page/static/css/main.bd4a38fa.chunk.css",
-    "main.js": "/web-page/static/js/main.2e78f15c.chunk.js",
-    "main.js.map": "/web-page/static/js/main.2e78f15c.chunk.js.map",
+    "main.css": "/web-page/static/css/main.8256b6a7.chunk.css",
+    "main.js": "/web-page/static/js/main.a0e731a1.chunk.js",
+    "main.js.map": "/web-page/static/js/main.a0e731a1.chunk.js.map",
     "runtime~main.js": "/web-page/static/js/runtime~main.d74acbcd.js",
     "runtime~main.js.map": "/web-page/static/js/runtime~main.d74acbcd.js.map",
-    "static/css/2.c3517fa0.chunk.css": "/web-page/static/css/2.c3517fa0.chunk.css",
-    "static/js/2.e0145bfe.chunk.js": "/web-page/static/js/2.e0145bfe.chunk.js",
-    "static/js/2.e0145bfe.chunk.js.map": "/web-page/static/js/2.e0145bfe.chunk.js.map",
+    "static/css/2.2bdc7266.chunk.css": "/web-page/static/css/2.2bdc7266.chunk.css",
+    "static/js/2.33b9e6d6.chunk.js": "/web-page/static/js/2.33b9e6d6.chunk.js",
+    "static/js/2.33b9e6d6.chunk.js.map": "/web-page/static/js/2.33b9e6d6.chunk.js.map",
     "index.html": "/web-page/index.html",
-    "precache-manifest.62b2b003b93c460e2be0f8889fd79012.js": "/web-page/precache-manifest.62b2b003b93c460e2be0f8889fd79012.js",
+    "precache-manifest.0264a9812961b7dc940d8cc979b44173.js": "/web-page/precache-manifest.0264a9812961b7dc940d8cc979b44173.js",
     "service-worker.js": "/web-page/service-worker.js",
-    "static/css/2.c3517fa0.chunk.css.map": "/web-page/static/css/2.c3517fa0.chunk.css.map",
-    "static/css/main.bd4a38fa.chunk.css.map": "/web-page/static/css/main.bd4a38fa.chunk.css.map",
+    "static/css/2.2bdc7266.chunk.css.map": "/web-page/static/css/2.2bdc7266.chunk.css.map",
+    "static/css/main.8256b6a7.chunk.css.map": "/web-page/static/css/main.8256b6a7.chunk.css.map",
     "static/media/bio.svg": "/web-page/static/media/bio.5d418060.svg",
     "static/media/bioMaq.mp4": "/web-page/static/media/bioMaq.22b03825.mp4",
     "static/media/biobanner.svg": "/web-page/static/media/biobanner.05efb56d.svg",
     "static/media/Footer.scss": "/web-page/static/media/bolsaspie.cc621285.svg",
     "static/media/contactenos.svg": "/web-page/static/media/contactenos.338f9e40.svg",
     "static/media/inicio.svg": "/web-page/static/media/inicio.be0f2f13.svg",
+    "static/media/manija2.jpg": "/web-page/static/media/manija2.cc591ee4.jpg",
     "static/media/nosotros.svg": "/web-page/static/media/nosotros.a20cfe6f.svg",
-    "static/media/productos.svg": "/web-page/static/media/productos.8c466bb2.svg"
+    "static/media/productos.svg": "/web-page/static/media/productos.8c466bb2.svg",
+    "static/media/troqueladora.jpg": "/web-page/static/media/troqueladora.9691327d.jpg"
   }
 }
