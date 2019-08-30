@@ -6,15 +6,15 @@
       "description" : "Nos adaptamos a sus necesidades para ofrecer \nel diseño que mejor se adapte a su producto o a sus líneas de productos."
     },
     {
-      "srcSet": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image2.jpg",
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image2.jpg",
       "description": "Manejamos la técnica de serigrafía para ofrecer adaptabilidad a las cantidades que pueda solicitar."
     },
     {
-      "srcSet": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image3.jpg",
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image3.jpg",
       "description": "Comprometidos con el planeta manejamos plasticos oxo-biodegrables y telas no tejidas (kambrel)."
     },
     {
-      "srcSet": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image4.jpg",
+      "original": "https://raw.githubusercontent.com/javiereyes4/web-page/master/public/assets/img/image4.jpg",
       "description": "Atendiendo otro tipo de necesidades ofrecemos la terminación de sus bolsas como impresión, selle, corte, manija o troquel."
     }
   ] 

@@ -1,0 +1,23 @@
+.image-gallery-image {
+  text-align: center;
+}
+
+.image-gallery-slide img {
+  width: 100% !important;
+  height: 50vh !important;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.image-gallery-bullets-container button {
+  background: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-gallery-slide img {
+    width: 100% !important;
+    height: 30vh !important;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
