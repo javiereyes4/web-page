@@ -5,7 +5,7 @@
 }
 
 .gallery {
-  margin-top: 3rem;
+  margin-top: 0
 }
 
 .image-gallery-slide img {
@@ -17,6 +17,10 @@
 }
 
 @media only screen and (min-width: 600px) {
+
+  .gallery {
+    margin-top: 2rem;
+  }
 
   .image-gallery-image {
     text-align: center;

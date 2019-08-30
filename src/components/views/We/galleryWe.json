@@ -1,0 +1,16 @@
+{ 
+  "images": [
+    {
+      "original": "/assets/img/impresora.jpg"
+    },
+    {
+      "original": "/assets/img/manija.jpg"
+    },
+    {
+      "original": "/assets/img/maquina.jpg"
+    },
+    {
+      "original": "/assets/img/maquina2.jpg"
+    }
+  ] 
+}
