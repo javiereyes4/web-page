@@ -17,7 +17,7 @@ const AppRoutes = () =>
         <Route exact path='/Product' component= { Product }></Route>
         <Route exact path='/Bio' component= { Bio }></Route>
         <Route exact path='/Contact' component= { Contact }></Route>
-        <Route  component= { Home }></Route>
+        <Route exact component= { Home }></Route>
       </Switch>
     </HashRouter>
 
