@@ -4,10 +4,10 @@ import Gallery from '../../Gallery/Gallery'
 import CardBio from '../../CardBio/CardBio'
 import Footer from '../../Footer/Footer'
 import inicio from '../../../img/svg/inicio.svg'
-import image1 from '../../../img/svg/imagen1.svg'
-import image2 from '../../../img/svg/imagen2.svg'
-import image3 from '../../../img/svg/imagen3.svg'
-import image4 from '../../../img/svg/imagen4.svg'
+import image1 from '../../../img/svg/imagen1.png'
+import image2 from '../../../img/svg/imagen2.png'
+import image3 from '../../../img/svg/imagen3.png'
+import image4 from '../../../img/svg/imagen4.png'
 
 export default class Home extends React.Component {
   render() {
