@@ -6,12 +6,12 @@ export default class Gallery extends React.Component {
 
   render() {
 
-    const { data } = this.props;
+    const { data, autoPlay=true } = this.props;
 
     console.log(data);
 
     return (
-      <ImageGallery items={data} showThumbnails={false} showFullscreenButton={false} showBullets={true} showPlayButton={false} autoPlay={true}/>
+      <ImageGallery items={data} showThumbnails={false} showFullscreenButton={false} showBullets={true} showPlayButton={false} autoPlay={autoPlay}/>
     );
   }
 }

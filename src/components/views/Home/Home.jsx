@@ -34,7 +34,7 @@ export default class Home extends React.Component {
     return(
       <div>
         <Header image={ inicio } colorText="#838383" />
-        <div className="gallery">
+        <div className="gallery galleryHome">
           <Gallery data={gallery} />
         </div>
         <div>
