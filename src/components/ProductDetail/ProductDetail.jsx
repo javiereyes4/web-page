@@ -20,12 +20,12 @@ export default class ProductDetail extends React.Component {
               <Col xs="12" sm="12">
                 <h3 style={styles}>{title}</h3>
               </Col>
-              <Col xs="12" sm="4">
+              <Col xs="12" sm="5">
                 <div className="galleryProduct">
                   <Gallery data={image} autoPlay={false} />
                 </div>
               </Col>
-              <Col className="descriptionProduct" xs="12" sm="8">
+              <Col className="descriptionProduct" xs="12" sm="7">
                 <p>{tx1}</p>
                 <p>{tx2}</p>
                 <p>{tx3}</p>
@@ -42,12 +42,12 @@ export default class ProductDetail extends React.Component {
               <Col xs="12" sm="12">
                 <h3 style={styles}>{title}</h3>
               </Col>
-              <Col className="descriptionProduct" xs="12" sm="8">
+              <Col className="descriptionProduct" xs="12" sm="7">
                 <p>{tx1}</p>
                 <p>{tx2}</p>
                 <p>{tx3}</p>
               </Col>
-              <Col xs="12" sm="4">
+              <Col xs="12" sm="5">
                 <div className="galleryProduct">
                   <Gallery data={image} autoPlay={false} />
                 </div>

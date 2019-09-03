@@ -6,7 +6,7 @@ export default class Gallery extends React.Component {
 
   render() {
 
-    const { data, autoPlay=true } = this.props;
+    const { data, autoPlay=false } = this.props;
 
     console.log(data);
 
