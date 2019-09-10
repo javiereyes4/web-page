@@ -37,7 +37,17 @@ export default class Contact extends React.Component {
 
     this.setState({ errors: result })
     if (!Object.keys(result).length) {
-      console.log("Formulario valido, se puede envíar");
+      // fetch(`/api/send?name=${encodeURIComponent(this.state.name)}`)
+
+      fetch(`/api/send?name=${encodeURIComponent(this.state.name)}&mail=${encodeURIComponent(this.state.mail)}&messaje=${encodeURIComponent(this.state.messaje)}`, {
+        method: 'POST', // or 'PUT'
+        body: JSON.stringify(this.state),
+        headers:{
+          'Content-Type': 'application/json'
+        }
+      }).then(res => res.json())
+      .catch(error => console.error('Error:', error))
+      .then(response => console.log('Success:', response));
     }
   }
 
@@ -67,7 +77,7 @@ export default class Contact extends React.Component {
                   {errors.mail && <p className="errorMessage">{errors.mail}</p>}
                   <br />
                   <Label for="messaje">Escriba su mensaje</Label>
-                  <Input type="textarea" name="messaje" id="messaje" />
+                  <Input type="textarea" name="messaje" id="messaje" onChange={this.handleChange} />
                   {errors.messaje && <p className="errorMessage">{errors.messaje}</p>}
                   <br />
                   <Button>Enviar</Button>
