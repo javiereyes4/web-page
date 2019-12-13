@@ -1,13 +1,27 @@
 .imgVision {
   width: 90%;
-  height: 400px;
+  height: auto;
   margin-top: 1rem;
 }
 
 .imgMision {
   width: 90%;
-  height: 500px;
+  height: auto;
   margin-top: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .imgVision {
+    width: 90%;
+    height: 400px;
+    margin-top: 1rem;
+  }
+  
+  .imgMision {
+    width: 90%;
+    height: 500px;
+    margin-top: 1rem;
+  }
 }
 
 .alignItems {
