@@ -7,12 +7,17 @@ import bImage3 from '../../../img/jpg/boutique/3.jpg';
 import bImage4 from '../../../img/jpg/boutique/4.jpg';
 import tImage1 from '../../../img//jpg/tira/2.jpg';
 import tImage2 from '../../../img//jpg/tira/bolsatira.jpg';
+import tImage3 from '../../../img//jpg/tira/1.png';
+import tImage4 from '../../../img//jpg/tira/3.png';
+import tImage5 from '../../../img//jpg/tira/4.png';
 import cImage1 from '../../../img//jpg/cambre/1.jpg';
 import cImage2 from '../../../img//jpg/cambre/2.jpg';
 import cImage3 from '../../../img//jpg/cambre/3.jpg';
 import cImage4 from '../../../img//jpg/cambre/4.jpg';
 import camImage1 from '../../../img//jpg/camiseta/1.jpg';
 import camImage2 from '../../../img//jpg/camiseta/2.jpg';
+import camImage3 from '../../../img//jpg/camiseta/3.png';
+import camImage4 from '../../../img//jpg/camiseta/4.png';
 import oImage1 from '../../../img//jpg/ovalo/1.jpg';
 import oImage2 from '../../../img//jpg/ovalo/2.jpg';
 import oImage3 from '../../../img//jpg/ovalo/3.jpg';
@@ -22,6 +27,7 @@ import oImage6 from '../../../img//jpg/ovalo/6.jpg';
 import aroImage1 from '../../../img//jpg/aro/1.jpg';
 import aroImage2 from '../../../img//jpg/aro/2.jpg';
 import aroImage3 from '../../../img//jpg/aro/3.jpg';
+import aroImage4 from '../../../img//jpg/aro/4.png';
 import pImage1 from '../../../img//jpg/piramide/1.jpg';
 import pImage2 from '../../../img//jpg/piramide/2.jpg';
 import rImage1 from '../../../img//jpg/rinon/1.jpg';
@@ -54,6 +60,15 @@ export default class We extends React.Component {
       },
       {
         original: tImage2
+      },
+      {
+        original: tImage3
+      },
+      {
+        original: tImage4
+      },
+      {
+        original: tImage5
       }
     ]
 
@@ -78,6 +93,12 @@ export default class We extends React.Component {
       },
       {
         original: camImage2
+      },
+      {
+        original: camImage3
+      },
+      {
+        original: camImage4
       }
     ]
 
@@ -111,6 +132,9 @@ export default class We extends React.Component {
       },
       {
         original: aroImage3
+      },
+      {
+        original: aroImage4
       }
     ]
 

@@ -39,7 +39,7 @@ export default class Contact extends React.Component {
     if (!Object.keys(result).length) {
       // fetch(`/api/send?name=${encodeURIComponent(this.state.name)}`)
 
-      fetch(`/api/send?name=${encodeURIComponent(this.state.name)}&mail=${encodeURIComponent(this.state.mail)}&messaje=${encodeURIComponent(this.state.messaje)}`, {
+      const asd = fetch(`/api/send?name=${encodeURIComponent(this.state.name)}&mail=${encodeURIComponent(this.state.mail)}&messaje=${encodeURIComponent(this.state.messaje)}`, {
         method: 'POST', // or 'PUT'
         body: JSON.stringify(this.state),
         headers:{
@@ -48,6 +48,8 @@ export default class Contact extends React.Component {
       }).then(res => res.json())
       .catch(error => console.error('Error:', error))
       .then(response => console.log('Success:', response));
+
+      console.log(asd);
     }
   }
 
