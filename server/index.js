@@ -14,31 +14,31 @@ app.use(function (req, res, next) {
   next();
 });
 
+var mailers = ['ventas@aagbolsasplasticas.com.co', 'bolplas@yahoo.com']
 
 app.post('/api/send', function (req, res) {
-
-  console.log(req.query.name);
-  console.log(req.query.mail);
-  console.log(req.query.messaje);
-
-  var mailOptions = {
-    from: req.query.mail,
-    to: req.query.mail,
-    subject: 'Solicitud de Información de ' + req.query.name,
-    html: 'Mensaje :' + req.query.messaje,
-  };
-  var transporter = nodemailer.createTransport({
-    host: 'mail.aagbolsasplasticas.com.co',
-    port: 465,
-    secure: true,
-    auth: auth
-  });
-  transporter.sendMail(mailOptions, (err, res) => {
-    if (err) {
-      return console.log(err);
-    } else {
-      console.log(JSON.stringify(res));
-    }
+  mailers.forEach(element => {
+    var mailOptions = {
+      from: 'webpage@aagbolsasplasticas.com.co',
+      to: element,
+      subject: 'Solicitud de Información de ' + req.query.name,
+      html: 'Mensaje :' + req.query.messaje + '\n correo de contacto: ' + req.query.mail,
+    };
+    var transporter = nodemailer.createTransport({
+      host: 'mail.aagbolsasplasticas.com.co',
+      port: 465,
+      secure: true,
+      auth: auth
+    });
+    transporter.sendMail(mailOptions, (err, res) => {
+      console.log(err);
+      console.log(res);
+      if (err) {
+        return console.log(err);
+      } else {
+        console.log(JSON.stringify(res));
+      }
+    });
   });
 })
 

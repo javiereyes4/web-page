@@ -53,7 +53,6 @@ export default class Contact extends React.Component {
 
     this.setState({ errors: result })
     if (!Object.keys(result).length) {
-
       fetch(`/api/send?name=${encodeURIComponent(this.state.name)}&mail=${encodeURIComponent(this.state.mail)}&messaje=${encodeURIComponent(this.state.messaje)}`, {
         method: 'POST', // or 'PUT'
         body: JSON.stringify(this.state),
@@ -69,8 +68,7 @@ export default class Contact extends React.Component {
       .catch(function(error) {
         console.log('Request failed', error)
       });
-
-      this.togglealertModal();      
+      this.togglealertModal();
     }
 
     this.setState({
