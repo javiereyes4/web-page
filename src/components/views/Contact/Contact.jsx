@@ -6,6 +6,7 @@ import Footer from '../../Footer/Footer'
 import './Contact.scss'
 
 const validate = values => {
+  console.log(values)
   const errors = {}
   if (!values.name) {
     errors.name = 'Digite un Nombre';
@@ -44,6 +45,16 @@ export default class Contact extends React.Component {
   handleChange = ({ target }) => {
     const { name, value } = target
     this.setState({ [name]: value })
+  }
+
+  sendWhatsMessage = () => {
+    const { errors, ...sinErrors } = this.state
+    const result = validate(sinErrors);
+    this.setState({ errors: result })
+    if (!Object.keys(result).length) {
+      alert();
+      window.open("https://api.whatsapp.com/send?phone=+57 3043888254&text=Nombre: "+ this.state.name +" \n  razón social: "+ this.state.razon +" \n  correo: "+ this.state.mail +" mensaje: "+ this.state.messaje+"", "_blank")
+    }
   }
 
   handleSubmit = e => {
@@ -92,7 +103,7 @@ export default class Contact extends React.Component {
           <Container className="contactContent">
             <Row>
               <Col xs="12" sm="6">
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.sendWhatsMessage}>
                   <Label for="name">Nombre</Label>
                   <Input type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
                   {errors.name && <p className="errorMessage" >{errors.name}</p>}
@@ -100,9 +111,9 @@ export default class Contact extends React.Component {
                   <Label for="razon">Razón Social</Label>
                   <Input type="text" name="razon" id="razon" value={this.state.razon} onChange={this.handleChange} />
                   <br />
-                  <Label for="tel">Teléfono de contacto</Label>
+                  {/* <Label for="tel">Teléfono de contacto</Label>
                   <Input type="text" name="tel" id="tel" value={this.state.tel} onChange={this.handleChange} />
-                  <br />
+                  <br /> */}
                   <Label for="mail">Dirección de correo electrónico</Label>
                   <Input type="text" name="mail" id="mail" value={this.state.mail} onChange={this.handleChange} />
                   {errors.mail && <p className="errorMessage">{errors.mail}</p>}
@@ -112,6 +123,7 @@ export default class Contact extends React.Component {
                   {errors.messaje && <p className="errorMessage">{errors.messaje}</p>}
                   <br />
                   <Button>Enviar</Button>
+                    
                 </form>
               </Col>
               <Col xs="12" sm="6">
