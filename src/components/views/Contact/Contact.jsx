@@ -52,7 +52,6 @@ export default class Contact extends React.Component {
     const result = validate(sinErrors);
     this.setState({ errors: result })
     if (!Object.keys(result).length) {
-      alert();
       window.open("https://api.whatsapp.com/send?phone=+57 3043888254&text=Nombre: "+ this.state.name +" \n  razón social: "+ this.state.razon +" \n  correo: "+ this.state.mail +" mensaje: "+ this.state.messaje+"", "_blank")
     }
   }
