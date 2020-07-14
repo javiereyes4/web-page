@@ -14,11 +14,11 @@ export default class Header extends React.Component {
           </div>
           <div className="textGoup2">
             <strong>Tel.: (1)2726878</strong>
-            <strong>Cel.: 303 3888254</strong>
+            <strong>Cel.: 304 3888254</strong>
           </div>
           <div className="textGoup1">
             <strong>E-mail: bolplas@yahoo.com</strong>
-            <strong>ventas@aagbolsasplsaticas.com.co</strong>
+            <strong>ventas@aagbolsasplasticas.com.co</strong>
             <strong>www.aagbolsasplasticas.com.co</strong>
           </div>
         </div>
@@ -30,12 +30,12 @@ export default class Header extends React.Component {
           </div>
           <div className="textGoup1">
             <strong>E-mail: bolplas@yahoo.com</strong>
-            <strong>ventas@aagbolsasplsaticas.com.co</strong>
+            <strong>ventas@aagbolsasplasticas.com.co</strong>
             <strong>www.aagbolsasplasticas.com.co</strong>
           </div>
           <div className="textGoup1">
             <strong>Tel.: (1)2726878</strong>
-            <strong>Cel.: 303 3888254</strong>
+            <strong>Cel.: 304 3888254</strong>
           </div>
         </div>
       </div>

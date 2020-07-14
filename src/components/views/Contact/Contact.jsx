@@ -131,7 +131,7 @@ export default class Contact extends React.Component {
                   <p>Gustavo Restrepo</p>
                   <p>Bogotá D. C.</p>
                   <p>Tel.: 2726878</p>
-                  <p>cel.: 303 3888254</p>
+                  <p>cel.: 304 3888254</p>
                   <p>E-mail: bolplas@yahoo.com</p>
                   <p>ventas@aagbolsasplasticas.com.co</p>
                   <a href="www.aagbolsasplasticas.com.co">www.aagbolsasplasticas.com.co</a>
